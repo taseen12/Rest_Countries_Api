@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="/images/bangladesh-logo-svg-vector.svg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>      
+          <a class="navbar-brand text-orange" href="index.html">Country-Road</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="country.html">Countries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather.html">Weather</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="background-container">
+                    <img src="/images/musician-349790_1280.jpg" alt="Background Image" class="background-image">
+                    <div class="content">
+                        <h1 class="headline">Your pride for your country should not come after your country becomes great; your country becomes great because of your pride in it</h1>
+                        <div class="line"></div>
+                        <button class="center-button" onclick="scrollToEnd()">Scroll to End</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Add more carousel items as needed -->
+            <div class="carousel-item">
+                <div class="background-container">
+                    <img src="/images/one.avif" alt="Background Image" class="background-image">
+                    <div class="content">
+                        <h1 class="headline">Your pride for your country should not come after your country becomes great; your country becomes great because of your pride in it</h1>
+                        <div class="line"></div>
+                        <button class="center-button" onclick="scrollToEnd()">Scroll to End</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-item">
+                <div class="background-container">
+                    <img src="/images/sunrise-4987384_1280.jpg" alt="Background Image" class="background-image">
+                    <div class="content">
+                        <h1 class="headline">Your pride for your country should not come after your country becomes great; your country becomes great because of your pride in it</h1>
+                        <div class="line"></div>
+                        <button class="center-button" onclick="scrollToEnd()">Scroll to End</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+      
+    <div class="search-container-main">
+    <div class="search-container">
+        <label for="countrySelect">Select a Country:</label>
+        <select id="countrySelect" onchange="displayCountryDetails()">
+          <option value="" disabled selected>Select a country</option>
+        </select>
+      </div>
+    </div>
+    <div class="parent-container">
+      <div class="country-details-container" id="countryDetailsContainer">
+      <div id="countryDetails"></div>
+     
+      </div>
+      <div class="weather-details-container" id="weatherDetailsContainer">
+        <div id="weatherDetails"></div></div></div>
+        <!--  -->
+        <div class="random">
+          <h2>Countries With TOP GDP</h2>
+        </div> 
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-lg-4">
+                          <div class="card">
+                            <div class="num_image">
+                            <div class="circle">
+                            <p class="number">1</p>
+                          </div>
+                              <img src="images/Flag-United-States-of-America.webp" class="card-img-top" alt="...">
+                            </div>
+                              <div class="card-body">
+                                  <h5 class="card-title">United States of America</h5>
+                                  <p class="card-text">GDP (USD billion)- 26,954</p>
+                                  <a href="country.html" class="btn btn-primary">Show More</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card"> <div class="num_image">
+                          <div class="circle">
+                            <p class="number">2</p>
+                          </div>
+                            <img src="images/Flag-China.webp" class="card-img-top" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title">China</h5>
+                                <p class="card-text">GDP (USD billion)- 17,786</p>
+                                <a href="country.html" class="btn btn-primary">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card"><div class="num_image">
+                        <div class="circle">
+                          <p class="number">3</p>
+                        </div>
+                        <img src="/images/1200px-Flag_of_Germany.svg.webp" class="card-img-top" alt="..."></div>
+                          <div class="card-body">
+                              <h5 class="card-title">Germany</h5>
+                              <p class="card-text">GDP (USD billion)- 4,430</p>
+                              <a href="country.html" class="btn btn-primary">Show More</a>
+                          </div>
+                      </div>
+                  </div>
+      
+                      <!-- Add more cards here as needed -->
+                  </div>
+              </div>
+      
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-lg-4">
+                          <div class="card"><div class="num_image">
+                            <div class="circle">
+                              <p class="number">4</p>
+                            </div>
+                              
+                              <img src="/images/japan.jpg" class="card-img-top" alt="..."></div>
+                              <div class="card-body">
+                                  <h5 class="card-title">Japan</h5>
+                                  <p class="card-text">GDP (USD billion)- 4,231</p>
+                                  <a href="country.html" class="btn btn-primary">Show More</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card"><div class="num_image">
+                          <div class="circle">
+                            <p class="number">5</p>
+                          </div>
+                            <img src="/images/Flag-India.webp" class="card-img-top" alt="..."></div>
+                            <div class="card-body">
+                                <h5 class="card-title">India</h5>
+                                <p class="card-text">GDP (USD billion)- 3,730</p>
+                                <a href="country.html" class="btn btn-primary">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card"><div class="num_image">
+                        <div class="circle">
+                          <p class="number">6</p>
+                        </div>
+                          <img src="/images/Flag_of_the_United_Kingdom.svg.png" class="card-img-top" alt="..."></div>
+                          <div class="card-body">
+                              <h5 class="card-title">United Kingdom</h5>
+                              <p class="card-text">GDP (USD billion)- 	3,332</p>
+                              <a href="country.html" class="btn btn-primary">Show More</a>
+                          </div>
+                      </div>
+                  </div>
+                    
+                  </div>
+              </div>
+      
+             
+          </div>
+      
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+      <!--  -->
+    <div class="random">
+      <h2>Random Countries</h2>
+    </div>
+      <div class="country-list" id="countryList">
+        
+      </div>
+
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Compressions</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Collection</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Free Designs</a></li>
+              <li><a href="#">Latest Designs</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Popular Designs</a></li>
+              <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
